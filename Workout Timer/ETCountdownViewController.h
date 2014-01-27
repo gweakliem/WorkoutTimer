@@ -1,5 +1,5 @@
 //
-//  ETFirstViewController.h
+//  ETCountdownViewController.h
 //  Workout Timer
 //
 //  Created by Gordon Weakliem on 1/23/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ETFirstViewController : UIViewController
+@interface ETCountdownViewController : UIViewController
 
 @end

@@ -14,14 +14,15 @@
 		4C058BBC189240110053A295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C058BBB189240110053A295 /* main.m */; };
 		4C058BC0189240110053A295 /* ETAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C058BBF189240110053A295 /* ETAppDelegate.m */; };
 		4C058BC3189240110053A295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C058BC1189240110053A295 /* Main.storyboard */; };
-		4C058BC6189240110053A295 /* ETFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C058BC5189240110053A295 /* ETFirstViewController.m */; };
-		4C058BC9189240110053A295 /* ETSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C058BC8189240110053A295 /* ETSecondViewController.m */; };
 		4C058BCB189240110053A295 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C058BCA189240110053A295 /* Images.xcassets */; };
 		4C058BD2189240110053A295 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C058BD1189240110053A295 /* XCTest.framework */; };
 		4C058BD3189240110053A295 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C058BAF189240110053A295 /* Foundation.framework */; };
 		4C058BD4189240110053A295 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C058BB3189240110053A295 /* UIKit.framework */; };
 		4C058BDC189240110053A295 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C058BDA189240110053A295 /* InfoPlist.strings */; };
 		4C058BDE189240110053A295 /* Workout_TimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C058BDD189240110053A295 /* Workout_TimerTests.m */; };
+		4C058BE9189244F50053A295 /* ETTabataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C058BE8189244F50053A295 /* ETTabataViewController.m */; };
+		4C058BEC1892450E0053A295 /* ETCountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C058BEB1892450E0053A295 /* ETCountdownViewController.m */; };
+		62068DA7260440539FB81961 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0C35FEDCB2471E9F3E27D8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +47,18 @@
 		4C058BBE189240110053A295 /* ETAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETAppDelegate.h; sourceTree = "<group>"; };
 		4C058BBF189240110053A295 /* ETAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETAppDelegate.m; sourceTree = "<group>"; };
 		4C058BC2189240110053A295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4C058BC4189240110053A295 /* ETFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETFirstViewController.h; sourceTree = "<group>"; };
-		4C058BC5189240110053A295 /* ETFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETFirstViewController.m; sourceTree = "<group>"; };
-		4C058BC7189240110053A295 /* ETSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETSecondViewController.h; sourceTree = "<group>"; };
-		4C058BC8189240110053A295 /* ETSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETSecondViewController.m; sourceTree = "<group>"; };
 		4C058BCA189240110053A295 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C058BD0189240110053A295 /* Workout TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workout TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C058BD1189240110053A295 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4C058BD9189240110053A295 /* Workout TimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Workout TimerTests-Info.plist"; sourceTree = "<group>"; };
 		4C058BDB189240110053A295 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C058BDD189240110053A295 /* Workout_TimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Workout_TimerTests.m; sourceTree = "<group>"; };
+		4C058BE7189244F50053A295 /* ETTabataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTabataViewController.h; sourceTree = "<group>"; };
+		4C058BE8189244F50053A295 /* ETTabataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTabataViewController.m; sourceTree = "<group>"; };
+		4C058BEA1892450E0053A295 /* ETCountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCountdownViewController.h; sourceTree = "<group>"; };
+		4C058BEB1892450E0053A295 /* ETCountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCountdownViewController.m; sourceTree = "<group>"; };
+		8A0C35FEDCB2471E9F3E27D8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3787E1D1914874999579B6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 				4C058BB2189240110053A295 /* CoreGraphics.framework in Frameworks */,
 				4C058BB4189240110053A295 /* UIKit.framework in Frameworks */,
 				4C058BB0189240110053A295 /* Foundation.framework in Frameworks */,
+				62068DA7260440539FB81961 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +93,7 @@
 				4C058BD7189240110053A295 /* Workout TimerTests */,
 				4C058BAE189240110053A295 /* Frameworks */,
 				4C058BAD189240110053A295 /* Products */,
+				BC3787E1D1914874999579B6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +113,7 @@
 				4C058BB1189240110053A295 /* CoreGraphics.framework */,
 				4C058BB3189240110053A295 /* UIKit.framework */,
 				4C058BD1189240110053A295 /* XCTest.framework */,
+				8A0C35FEDCB2471E9F3E27D8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,15 +121,15 @@
 		4C058BB5189240110053A295 /* Workout Timer */ = {
 			isa = PBXGroup;
 			children = (
+				4C058BE7189244F50053A295 /* ETTabataViewController.h */,
+				4C058BE8189244F50053A295 /* ETTabataViewController.m */,
 				4C058BBE189240110053A295 /* ETAppDelegate.h */,
 				4C058BBF189240110053A295 /* ETAppDelegate.m */,
 				4C058BC1189240110053A295 /* Main.storyboard */,
-				4C058BC4189240110053A295 /* ETFirstViewController.h */,
-				4C058BC5189240110053A295 /* ETFirstViewController.m */,
-				4C058BC7189240110053A295 /* ETSecondViewController.h */,
-				4C058BC8189240110053A295 /* ETSecondViewController.m */,
 				4C058BCA189240110053A295 /* Images.xcassets */,
 				4C058BB6189240110053A295 /* Supporting Files */,
+				4C058BEA1892450E0053A295 /* ETCountdownViewController.h */,
+				4C058BEB1892450E0053A295 /* ETCountdownViewController.m */,
 			);
 			path = "Workout Timer";
 			sourceTree = "<group>";
@@ -164,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C058BE1189240110053A295 /* Build configuration list for PBXNativeTarget "Workout Timer" */;
 			buildPhases = (
+				09BC3BE481414B73BC7E745F /* Check Pods Manifest.lock */,
 				4C058BA8189240110053A295 /* Sources */,
 				4C058BA9189240110053A295 /* Frameworks */,
 				4C058BAA189240110053A295 /* Resources */,
+				A25DA3F611B64994BB86EBDA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,15 +258,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09BC3BE481414B73BC7E745F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A25DA3F611B64994BB86EBDA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C058BA8189240110053A295 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C058BC6189240110053A295 /* ETFirstViewController.m in Sources */,
 				4C058BBC189240110053A295 /* main.m in Sources */,
 				4C058BC0189240110053A295 /* ETAppDelegate.m in Sources */,
-				4C058BC9189240110053A295 /* ETSecondViewController.m in Sources */,
+				4C058BE9189244F50053A295 /* ETTabataViewController.m in Sources */,
+				4C058BEC1892450E0053A295 /* ETCountdownViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +423,7 @@
 		};
 		4C058BE2189240110053A295 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC3787E1D1914874999579B6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -395,6 +437,7 @@
 		};
 		4C058BE3189240110053A295 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC3787E1D1914874999579B6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -467,6 +510,7 @@
 				4C058BE3189240110053A295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C058BE4189240110053A295 /* Build configuration list for PBXNativeTarget "Workout TimerTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +519,7 @@
 				4C058BE6189240110053A295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
