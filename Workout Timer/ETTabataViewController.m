@@ -1,6 +1,6 @@
 //
 //  ETTabataViewController.m
-//  
+//
 //
 //  Created by Gordon Weakliem on 1/23/14.
 //
@@ -10,14 +10,11 @@
 
 typedef NS_ENUM(NSInteger, kETCounter){
     kETCounterRunning = 0,
+    kETSwitchToAction,
+    kETSwitchToRest,
     kETCounterStopped,
     kETCounterReset,
     kETCounterEnded
-};
-
-typedef NS_ENUM(NSInteger, kETTabataState) {
-    kETRest = 0,
-    kETAction = 1
 };
 
 @interface ETTabataViewController ()
@@ -25,10 +22,12 @@ typedef NS_ENUM(NSInteger, kETTabataState) {
 @property (strong, nonatomic) IBOutlet TTCounterLabel *restCounterLabel;
 @property (strong, nonatomic) IBOutlet UIButton *resetButton;
 @property (strong, nonatomic) IBOutlet TTCounterLabel *actionCounterLabel;
+@property (strong, nonatomic) IBOutlet UILabel *repetitionLabel;
 @end
 
 @implementation ETTabataViewController {
-int repetitions;
+    int repetitions;
+    bool tabataIsActionState;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -44,9 +43,11 @@ int repetitions;
 {
     [super viewDidLoad];
 	
-    [self customizeAppearance: self.restCounterLabel withTextColor:[UIColor yellowColor]];
-    [self customizeAppearance: self.actionCounterLabel withTextColor:[UIColor cyanColor]];
+    // initially set to default tabata times
+    [self customizeAppearance: self.restCounterLabel withTextColor:[UIColor yellowColor] andStartValue:10000];
+    [self customizeAppearance: self.actionCounterLabel withTextColor:[UIColor cyanColor] andStartValue:20000];
     self.actionCounterLabel.countdownDelegate = self;
+    self.restCounterLabel.countdownDelegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,12 +59,13 @@ int repetitions;
 - (IBAction)startStopButtonPressed:(UIButton *)sender {
     if (self.actionCounterLabel.isRunning) {
         [self.actionCounterLabel stop];
-        
         [self updateUIForState:kETCounterStopped];
     } else {
         self->repetitions = 0;
+        [self.repetitionLabel setText:@"0"];
+        self->tabataIsActionState = NO;
+        [self toggleTabataState];
         [self.actionCounterLabel start];
-        
         [self updateUIForState:kETCounterRunning];
     }}
 
@@ -90,7 +92,7 @@ int repetitions;
         case kETCounterReset:
             [self.startStopButton setTitle:NSLocalizedString(@"Start", @"Start") forState:UIControlStateNormal];
             self.resetButton.hidden = YES;
-        self.startStopButton.hidden = NO;
+            self.startStopButton.hidden = NO;
             break;
             
         case kETCounterEnded:
@@ -103,8 +105,8 @@ int repetitions;
     }
 }
 
-- (void)customizeAppearance: (TTCounterLabel*)counterLabel withTextColor:(UIColor*) color {
-    [counterLabel setStartValue:20000];
+- (void)customizeAppearance: (TTCounterLabel*)counterLabel withTextColor:(UIColor*) color andStartValue:(long)startValue {
+    [counterLabel setStartValue:startValue];
     counterLabel.countDirection = kCountDirectionDown;
     [counterLabel setBoldFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:75]];
     [counterLabel setRegularFont:[UIFont fontWithName:@"HelveticaNeue-UltraLight" size:75]];
@@ -119,8 +121,27 @@ int repetitions;
     [counterLabel updateApperance];
 }
 
+-(BOOL) toggleTabataState
+{
+    self->tabataIsActionState = !self->tabataIsActionState;
+    if (self->tabataIsActionState) {
+        [self.actionCounterLabel start];
+        [self.restCounterLabel reset];
+    } else  {
+        [self.actionCounterLabel reset];
+        [self.restCounterLabel start];
+        self->repetitions++;
+    }
+    return self->tabataIsActionState;
+}
+
 - (void)countdownDidEnd {
-    [self updateUIForState:kETCounterEnded];
+    [self toggleTabataState];
+    [self.repetitionLabel setText:[NSString stringWithFormat:@"%d",self->repetitions]];
+    if (self->repetitions == 8) {
+        [self.actionCounterLabel stop];
+        [self updateUIForState:kETCounterEnded];
+    }
 }
 
 @end

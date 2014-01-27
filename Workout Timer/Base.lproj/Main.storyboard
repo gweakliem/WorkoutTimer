@@ -58,37 +58,43 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="X99-Cn-m1j">
-                                        <rect key="frame" x="11" y="0.0" width="32" height="32"/>
+                                        <rect key="frame" x="43" y="0.0" width="32" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="jOn-hc-LAP">
-                                        <rect key="frame" x="51" y="0.0" width="32" height="32"/>
+                                        <rect key="frame" x="75" y="0.0" width="32" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="trk-Du-tmV">
-                                        <rect key="frame" x="82" y="0.0" width="32" height="32"/>
+                                        <rect key="frame" x="102" y="0.0" width="32" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="wkJ-Sq-75j">
-                                        <rect key="frame" x="115" y="0.0" width="32" height="32"/>
+                                        <rect key="frame" x="134" y="0.0" width="32" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="5So-Xe-PYc">
-                                        <rect key="frame" x="148" y="0.0" width="32" height="32"/>
+                                        <rect key="frame" x="165" y="0.0" width="32" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="VAb-Hz-V1B">
-                                        <rect key="frame" x="188" y="0.0" width="32" height="32"/>
+                                        <rect key="frame" x="194" y="0.0" width="32" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="lLV-GQ-pnO">
-                                        <rect key="frame" x="228" y="0.0" width="32" height="32"/>
+                                        <rect key="frame" x="234" y="0.0" width="32" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="3g2-MQ-gaa">
                                         <rect key="frame" x="268" y="0.0" width="32" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwA-GD-3sw">
+                                        <rect key="frame" x="12" y="5" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </view>
                         </subviews>
@@ -97,6 +103,7 @@
                     <tabBarItem key="tabBarItem" title="Tabata" image="first" id="u1e-5L-l1D"/>
                     <connections>
                         <outlet property="actionCounterLabel" destination="2Ne-S8-bjE" id="zeM-81-riq"/>
+                        <outlet property="repetitionLabel" destination="WwA-GD-3sw" id="qaV-U5-wcD"/>
                         <outlet property="resetButton" destination="iP9-N6-s48" id="QUM-pY-kvY"/>
                         <outlet property="restCounterLabel" destination="oYA-bN-vGi" id="qje-xx-S4X"/>
                         <outlet property="startStopButton" destination="S5V-BL-q6B" id="uyg-9A-9x2"/>
